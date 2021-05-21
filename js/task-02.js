@@ -18,9 +18,9 @@ const ingredients = [
 
 const ulEl = document.querySelector('#ingredients');
 const elements = ingredients.map((ingredient) => {
-    const item = document.createElement('li');
+  const item = document.createElement('li');
     item.textContent = ingredient;
     return item;
 });
 console.log(elements);
-ulEl.appendChild(...elements);
+ulEl.append(...elements);
